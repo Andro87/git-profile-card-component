@@ -1,0 +1,11 @@
+.info{
+    text-align: center;
+  }
+  
+  .number{
+    color: var(--dark);
+    font-family: "kumb";
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 10px 0;
+  }

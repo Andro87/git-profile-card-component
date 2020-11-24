@@ -1,16 +1,61 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face{
+  font-family: "kumb";
+  src: url("../public/fonts/KumbhSans-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: "kumb";
+  src: url("../public/fonts/KumbhSans-Regular.ttf");
+  font-weight: 400;
+}
+
+:root{
+  --background:hsl(185, 75%, 39%);
+  --light:hsl(227, 10%, 46%);
+  --dark:hsl(229, 23%, 23%);
+  --line: hsl(0, 3%, 83%);
+}
+
+
+html{
+  font-size: 18px;
+}
+
+body{
+  font-family: "kumb";
+  font-weight: 400;
+  font-size:0.8rem;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  color: var(--light);
+  background:url("../public/images/bg-pattern-top.svg") , url("../public/images/bg-pattern-bottom.svg"), var(--background);
+  background-repeat: no-repeat;
+  background-position: bottom 50vh right 50vw,left 50vw top 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h6{
+  color: var(--dark);
+  font-family: "kumb";
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-top:-30px;
+
+}
+
+
+@media only screen and (max-width:480px){
+  body{
+    padding: 140px 28px;
+  }
 }
